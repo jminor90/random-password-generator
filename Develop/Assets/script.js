@@ -11,7 +11,7 @@ let availCharmander;
 let password = ''
 
 function generatePassword() {
-
+  let password = ''
   //prompt user
   let passLength = prompt("Length?")
   if (passLength < 8 || passLength >128) {
@@ -19,25 +19,25 @@ function generatePassword() {
     console.log("WRONG")
     generatePassword();
   } else {
+    passUpper = confirm("Would you like to include upper case?")
+    passLower = confirm("Would you like to include lower case?")
     passNumeric = confirm("Would you like to include numerals?")
-    //passLower = confirm("Would you like to include lower case?")
-    //passUpper = confirm("Would you like to include upper case?")
     
 
-    //console.log(passLower)
-    //console.log(passUpper)
 
 
 
   }
   console.log(passLength)
+  console.log(passUpper)
+  console.log(passLower)
   console.log(passNumeric)
   
-  if (passNumeric === true) {
-    availCharmander = numerals.concat(upperCase)
-  } else
-  availCharmander = upperCase
-
+  if (passUpper === true && passLower === true && passNumeric === true) {
+    availCharmander = upperCase.concat(lowerCase, numerals)}
+    else {
+      console.log("logic not here yet")
+    }
 
 
   for (i=0; i < passLength; i += 1) {
@@ -63,6 +63,7 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
