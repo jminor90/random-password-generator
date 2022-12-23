@@ -17,7 +17,7 @@ function generatePassword() {
   if (passLength < 8 || passLength >128) {
     passAlert = alert("Password must be between 8 and 128 characterss")
     console.log("WRONG")
-
+    generatePassword();
   } else {
     passNumeric = confirm("Would you like to include numerals?")
     //passLower = confirm("Would you like to include lower case?")
@@ -34,14 +34,14 @@ function generatePassword() {
   console.log(passNumeric)
   
   if (passNumeric === true) {
-    availCharmander = numerals
+    availCharmander = numerals.concat(upperCase)
   } else
   availCharmander = upperCase
 
 
 
   for (i=0; i < passLength; i += 1) {
-    const randomIndex = Math.floor(Math.random() *passLength.length)
+    const randomIndex = Math.floor(Math.random() *availCharmander.length);
     password += availCharmander[randomIndex];
 
   } console.log(password)
