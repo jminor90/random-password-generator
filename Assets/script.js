@@ -12,9 +12,9 @@ function generatePassword() {
   let password = ''
   let availCharmander = []
   //prompt user
-  let passLength = prompt("Length?")
+  let passLength = prompt("Enter Length of Password (Must be 8 and 128 characters long)")
   if (passLength < 8 || passLength >128) { //find a way to check if user inputs a string here...
-    passAlert = alert("Password must be between 8 and 128 characterss")
+    passAlert = alert("Password must be between 8 and 128 characters long")
     console.log("WRONG")
     generatePassword();
   } else {
@@ -133,7 +133,7 @@ function writePassword() {
   let passwordText = document.querySelector("#password");
   
   /*
-  if (password = undefined) {
+  if (passwordText === undefined) {
     passwordText.value = "Password is not Defined"
   } else {
   passwordText.value = password;
