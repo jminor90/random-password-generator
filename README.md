@@ -15,7 +15,7 @@ When the "Generate Password" button is clicked a series of prompts is asked of t
 
 After all criteria is entered the password will generate into the field.
 
-!(assets/random-password-generator.png)
+![Image of Website](assets/random-password-generator.png)
 
 - [Link to Deployed Websited](https://jminor90.github.io/random-password-generator/)
 
