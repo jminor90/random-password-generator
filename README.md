@@ -15,7 +15,7 @@ When the "Generate Password" button is clicked a series of prompts is asked of t
 
 After all criteria is entered the password will generate into the field.
 
-![Image of Website](assets/random-password-generator.png)
+![Image of website](assets/random-password-generator.png)
 
 - [Link to Deployed Websited](https://jminor90.github.io/random-password-generator/)
 
@@ -30,7 +30,7 @@ Primary update by Joshua Minor.
 ## Primary Resources
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [W3 Schools](https://www.w3schools.com/)
-- [StackOverflow] (https://stackoverflow.com/)
+- [StackOverflow](https://stackoverflow.com/)
 
 
 ## License
